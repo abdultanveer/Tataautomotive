@@ -11,8 +11,9 @@ import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-    String[] subjects = new String[]{"english","hindi","urdu","english","hindi","urdu"}; //plug
+    String[] subjects = new String[]{"english", "hindi", "urdu", "english", "hindi", "urdu"}; //plug
     public static String TAG = MainActivity.class.getSimpleName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +37,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ViewPager2 viewPager2 = findViewById(R.id.viewPager);
-        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(),getLifecycle());
+        ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), getLifecycle());
         viewPager2.setAdapter(viewPagerAdapter);
 
     }
+
+    /*public void openBottomSheet(View view) {
+        BottomSheetDialog bottomSheet = new BottomSheetDialog();
+        bottomSheet.show(getSupportFragmentManager(), "ModalBottomSheet");
+    }*/
 }

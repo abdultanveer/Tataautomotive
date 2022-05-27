@@ -7,14 +7,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link CarFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CarFragment extends Fragment {
-
+public class CarFragment extends Fragment implements View.OnClickListener {
+    Button openButton;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -59,6 +60,15 @@ public class CarFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_car, container, false);
+        View fragmentScreen = inflater.inflate(R.layout.fragment_car, container, false);
+        openButton = fragmentScreen.findViewById(R.id.btnOpenbottomSheet);
+        openButton.setOnClickListener(this);
+        return fragmentScreen;
+    }
+
+    @Override
+    public void onClick(View view) {
+        BottomSheetDialog bottomSheet = new BottomSheetDialog();
+        bottomSheet.show(getActivity().getSupportFragmentManager(), "ModalBottomSheet");
     }
 }
