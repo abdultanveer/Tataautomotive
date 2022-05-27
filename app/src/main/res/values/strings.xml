@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tataautomotive</string>
+    <string name="label_home">home</string>
+    <string name="label_email">email</string>
+    <string name="label_music">music</string>
+    <string name="label_gallery">gallery</string>
+</resources>

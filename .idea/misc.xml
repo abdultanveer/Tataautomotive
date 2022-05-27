@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/drawable/ic_baseline_bluetooth_24.xml" value="0.141" />
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/layout/activity_main1.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/layout/fragment_selectitem.xml" value="0.10280054644808743" />
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/layout/row_plank.xml" value="0.1896551724137931" />
+        <entry key="..\:/Users/HII/AndroidStudioProjects/Tataautomotive/app/src/main/res/menu/menu_rail.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
